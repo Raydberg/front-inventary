@@ -44,6 +44,7 @@ export const removeProduct = async (id) => {
     throw error;
   }
 };
+
 export const updateProduct = async (id, product) => {
   try {
     const { data } = await axios.put(`${API}/products/${id}`, product, {
